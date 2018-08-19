@@ -3,21 +3,22 @@ languageCode = "en-us"
 title = "Rishabh Jain"
 theme = "cactus-plus"
 
+googleAnalytics = "your_google_analytics_id"
 
 # Theme settings start may contain settings that i may use for other themes in future
 [params]
-author = "site_author"
-description = "Site Description"
-bio = "author biography"
+author = "Rishabh Jain"
+description = "Full Stack Developer"
+bio = "Full Stack Developer"
 
-twitter = "your_twitter_id"
-facebook = "your_facebook_id"
+twitter = "rishabhjain1403"
+#facebook = "your_facebook_id"
 
 enableRSS = true
 enableToc = true
 
 enableDisqus = true
-disqusShortname = "your_disqus_short_name"
+disqusShortname = "rishabh1403-1"
 
 
 enableSummary = true
@@ -59,7 +60,7 @@ share = ""
 
 # 404 page
 title404 = "Stuart Not Found"
-subtitle404 = "Not Found Baba"
+subtitle404 = "Not Found"
 
 # Choose a font for the social icons in the footer. Either "mono-social" or "font-awesome"
 iconFont = "font-awesome"
@@ -70,6 +71,6 @@ socialIconStyle = ""
 # Add additional social link entries underneath
 
 [social]
-facebook-square = "https://www.facebook.com/nodejh"
-twitter-square = "https://www.twitter.com/nodejh"
-github-square = "https://www.github.com/nodejh"
+#facebook-square = "https://www.facebook.com/nodejh"
+twitter-square = "https://www.twitter.com/rishabhjain1403"
+github-square = "https://www.github.com/rishabh1403"
