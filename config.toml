@@ -8,7 +8,7 @@ googleAnalytics = "UA-66600089-2"
 # Theme settings start may contain settings that i may use for other themes in future
 [params]
 author = "Rishabh Jain"
-description = "Full Stack Developer"
+description = "Rishabh's Blog"
 bio = "Full Stack Developer"
 
 twitter = "rishabhjain1403"
