@@ -3,7 +3,7 @@ languageCode = "en-us"
 title = "Rishabh Jain"
 theme = "cactus-plus"
 
-googleAnalytics = "your_google_analytics_id"
+googleAnalytics = "UA-66600089-2"
 
 # Theme settings start may contain settings that i may use for other themes in future
 [params]
