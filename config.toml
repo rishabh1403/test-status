@@ -12,7 +12,7 @@ description = "Rishabh's Blog"
 bio = "Full Stack Developer"
 
 twitter = "rishabhjain1403"
-#facebook = "your_facebook_id"
+facebook = "rishabhjain1403"
 
 enableRSS = true
 enableToc = true
@@ -23,7 +23,7 @@ disqusShortname = "rishabh1403-1"
 
 enableSummary = true
 # Set the value to true if use description in post front matter replace content summary
-useDescriptionReplaceSummary = false
+useDescriptionReplaceSummary = true
 
 
 enableGoogleAnalytics = true
