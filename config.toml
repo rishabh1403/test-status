@@ -43,6 +43,8 @@ customJS  = []
 home = ""
 about = ""
 archive = ""
+tags= ""
+categories=""
 subscribe = ""
 
 olderPosts = ""
