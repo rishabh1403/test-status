@@ -19,3 +19,4 @@ Umm... General random thoughts, I do some coding at work, so will post some tuto
 Won't bore you anymore. This time I am not going to fail. Sincere motivation :), at least one post per week is what I am targeting for.
 
 See you around :) 
+{{< youtube I8_pURh3l_s >}}
