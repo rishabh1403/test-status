@@ -18,3 +18,5 @@ Now that the task is decided, it is time to choose a platform. There are many op
 I would be posting solutions to all the questions that I solve as blog posts here explaining the approach I took, what problems I faced and so on. The solutions would be in [Golang](https://golang.org/) because that is the language I am trying to learn here.
 
 Stay tuned and see you later :)
+{{< youtube UsNVC8hB7q4 >}}
+
