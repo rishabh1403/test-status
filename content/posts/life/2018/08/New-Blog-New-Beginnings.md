@@ -2,6 +2,7 @@
 title: "New Blog New Beginnings"
 description: "My first blog. Just getting the hang of it and posting some random thoughts."
 author: "Rishabh Jain"
+keywords: ["life","rishabh1403","intro","blog"]
 tags: ["life"]
 categories: ["life"]
 date: 2018-08-21T01:17:37+05:30

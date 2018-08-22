@@ -2,6 +2,7 @@
 title: "Hackerrank Solutions in Golang"
 description: "My solutions to hackerrank practice problems in golang with explantions."
 author: "Rishabh Jain"
+keywords: ["hackerrank","golang","coding","rishabh1403","solution","blog"]
 tags: ["hackerrank","golang","coding"]
 categories: ["hackerrank","golang","coding"]
 date: 2018-08-21T12:32:25+05:30
