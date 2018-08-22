@@ -6,7 +6,7 @@ keywords: ["solve","me","first","rishabh1403","hackerrank","blog","golang","solu
 tags: ["hackerrank","coding","golang"]
 categories: ["hackerrank","coding","golang"]
 date: 2018-08-22T12:32:09+05:30
-draft: true
+draft: false
 ---
 <!--Solution for hackerrank warmup question solve me first in golang. In this blog I'll discuss my solution, what mistakes I initially made and what concepts I learned.-->
 <!--more-->
@@ -86,3 +86,4 @@ func main() {
 There you go guys, you made it to the end of the blog. Please check out the video below if you still have any doubts, subscribe to my [youtube channel](https://www.youtube.com/channel/UC4syrEYE9_fzeVBajZIyHlA) for regular updates, follow me on [twitter](https://www.twitter.com/rishabhjain1403) , drop me a mail or leave a  comment here if you still have any doubts and I will try my best to help you out. Thanks
 
 Stay tuned and see you around :)
+{{< youtube yNzVtH2xsfQ >}}
