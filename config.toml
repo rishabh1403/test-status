@@ -8,7 +8,7 @@ googleAnalytics = "UA-66600089-2"
 # Theme settings start may contain settings that i may use for other themes in future
 [params]
 author = "Rishabh Jain"
-description = "Rishabh's Blog"
+description = "Rishabh Jain's Blog"
 bio = "Full Stack Developer"
 
 twitter = "rishabhjain1403"
@@ -52,7 +52,7 @@ newerPosts = ""
 copyright = ""
 
 # show latest posts in single page
-showLatestPosts = false
+showLatestPosts = true
 readMore = ""
 
 # Share
