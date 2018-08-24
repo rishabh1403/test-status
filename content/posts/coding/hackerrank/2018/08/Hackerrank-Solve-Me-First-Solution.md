@@ -41,7 +41,7 @@ func main() {
 }
 ```
 * First go ahead and delete everything in the pre-existing template.
-* Now every Go code needs a package name, and if it is the main package it is supposed to named _main_  (more on that in later blogs).
+* Now every Go code needs a package name, and if it is the main package it is supposed to named _main_  (more on that in later blogs)
 * we need to import the **fmt** library for standard input output operations.
 * Next thing we need is our **main** function which automatically gets called and is necessary if your program is supposed to be run.
 * we declare functions with **func** keyword, it takes no argument and has no return type
