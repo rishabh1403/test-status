@@ -8,7 +8,7 @@ categories: ["life"]
 date: 2018-08-21T01:17:37+05:30
 draft: false
 ---
-<!--My first blog. Just getting the hang of it and posting some random thoughts.-->
+My first blog. Just getting the hang of it and posting some random thoughts.
 <!--more-->
 # Quick Background
 My first blog. Just getting the hang of it and posting some random thoughts.

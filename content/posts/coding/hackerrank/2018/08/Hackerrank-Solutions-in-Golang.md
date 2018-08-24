@@ -8,7 +8,7 @@ categories: ["hackerrank","golang","coding"]
 date: 2018-08-21T12:32:25+05:30
 draft: false
 ---
-<!--My solutions to hackerrank practice problems in golang with explantions.-->
+My solutions to hackerrank practice problems in golang with explantions.
 <!--more-->
 # Starting Golang
 I used to do competitive programming in my college days and from there on moved to web development. It's been a long time since I looked back and I think it's high time I should start coding again. I also started learning [Golang](https://golang.org/) recently, so I think it would be better to practice it on some code snippets online and test it for time and space complexity along the way. 

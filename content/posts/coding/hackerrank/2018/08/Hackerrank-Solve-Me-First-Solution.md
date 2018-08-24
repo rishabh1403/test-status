@@ -8,7 +8,7 @@ categories: ["hackerrank","coding","golang"]
 date: 2018-08-22T12:32:09+05:30
 draft: false
 ---
-<!--Solution for hackerrank warmup question solve me first in golang. In this blog I'll discuss my solution, what mistakes I initially made and what concepts I learned.-->
+Solution for hackerrank warmup question solve me first in golang. In this blog I'll discuss my solution, what mistakes I initially made and what concepts I learned.
 <!--more-->
 # Problem Statement
 The question can be found at this [link](https://www.hackerrank.com/challenges/solve-me-first/problem). The question is pretty straight forward. We have to take two integers as input, and print their sum.
