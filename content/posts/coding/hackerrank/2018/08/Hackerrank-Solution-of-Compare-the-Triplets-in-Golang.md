@@ -5,8 +5,8 @@ author: "Rishabh Jain"
 keywords: ["very","big","sum","rishabh1403","hackerrank","blog","golang","solution","learn","code"]
 tags: ["hackerrank","coding","golang"]
 categories: ["hackerrank","coding","golang"]
-date: 2018-08-24T22:33:09+05:30
-draft: true
+date: 2018-08-25T23:00:09+05:30
+draft: false
 ---
 Solution for hackerrank warmup question compare the triplets in golang. In this question we will use if-else statement and arrays in golang for the first time along with for loops that we covered earlier.
 <!--more-->
@@ -189,4 +189,4 @@ func main(){
 There you go guys, you made it to the end of the blog. Please check out the video below if you still have any doubts, subscribe to my [youtube channel](https://www.youtube.com/channel/UC4syrEYE9_fzeVBajZIyHlA) for regular updates, subcribe to my mailing list below, follow me on [twitter](https://www.twitter.com/rishabhjain1403) , drop me a mail or leave a comment here if you still have any doubts and I will try my best to help you out. Thanks
 
 Stay tuned and see you around :)
-{{< youtube >}}
+{{< youtube 4y8ceyunvOQ>}}
