@@ -2,7 +2,7 @@
 title: "Hackerrank Solution of Compare the Triplets in Golang"
 description: "Solution for hackerrank warmup question compare the triplets in golang. In this question we will use if-else statement and arrays in golang for the first time along with for loops that we covered earlier." 
 author: "Rishabh Jain"
-keywords: ["very","big","sum","rishabh1403","hackerrank","blog","golang","solution","learn","code"]
+keywords: ["rishabh","rishabh jain","very","big","sum","rishabh1403","hackerrank","blog","golang","solution","learn","code"]
 tags: ["hackerrank","coding","golang"]
 categories: ["hackerrank","coding","golang"]
 date: 2018-08-25T23:00:09+05:30

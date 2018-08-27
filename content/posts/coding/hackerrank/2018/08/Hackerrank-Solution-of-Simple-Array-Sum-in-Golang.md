@@ -2,7 +2,7 @@
 title: "Hackerrank Solution of Simple Array Sum in Golang"
 description: "Solution for hackerrank warmup question simple array sum in golang. In this blog I'll discuss my solution, what mistakes I initially made and what concepts I learned."
 author: "Rishabh Jain"
-keywords: ["simple","array","sum","rishabh1403","hackerrank","blog","golang","solution","learn","code"]
+keywords: ["rishabh","rishabh jain","simple","array","sum","rishabh1403","hackerrank","blog","golang","solution","learn","code"]
 tags: ["hackerrank","coding","golang"]
 categories: ["hackerrank","coding","golang"]
 date: 2018-08-25T00:55:09+05:30

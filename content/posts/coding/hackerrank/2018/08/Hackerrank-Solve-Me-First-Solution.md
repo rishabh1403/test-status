@@ -2,7 +2,7 @@
 title: "Hackerrank Solve Me First Solution"
 description: "Solution for hackerrank warmup question solve me first in golang. In this blog I'll discuss my solution, what mistakes I initially made and what concepts I learned."
 author: "Rishabh Jain"
-keywords: ["solve","me","first","rishabh1403","hackerrank","blog","golang","solution","learn","code"]
+keywords: ["rishabh","rishabh jain","solve","me","first","rishabh1403","hackerrank","blog","golang","solution","learn","code"]
 tags: ["hackerrank","coding","golang"]
 categories: ["hackerrank","coding","golang"]
 date: 2018-08-22T12:32:09+05:30
