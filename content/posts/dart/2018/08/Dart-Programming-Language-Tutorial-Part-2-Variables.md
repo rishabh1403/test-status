@@ -2,16 +2,16 @@
 title: "Dart Programming Language Tutorial Part 2 | Variables"
 description: "In this post we will look into various ways in which we can declare and use variable. We will also learn some syntax of dart and how to print values of variables. Let's dive right into it."
 author: "Rishabh Jain"
-keywords: ["rishabh","rishabh jain","rishabh1403","blog"]
-tags: []
-categories: []
-date: 2018-08-27T20:33:01+05:30
-draft: true
+keywords: ["rishabh","rishabh jain","rishabh1403","blog","dart","variables","declaration","initialization","dynamic","var","int"]
+tags: ["dart","tutorial"]
+categories: ["dart"]
+date: 2018-08-28T20:00:01+05:30
+draft: false
 ---
 In this post we will look into various ways in which we can declare and use variable. We will also learn some syntax of dart and how to print values of variables. Let's dive right into it.
 <!--more-->
 # The main function
-Every dart program starts executing from a main function. What is a function? How do we use it? Weren't we going to learn about variables? Hold on, just bear with me for couple of posts till we will write all our code inside a wrapper. So open dartpad and let's start coding. 
+Every dart program starts executing from a main function. What is a function? How do we use it? Weren't we going to learn about variables? Hold on, just bear with me for couple of posts till we will write all our code inside a wrapper. So open [dartpad](https://dartpad.dartlang.org/) and let's start coding. 
 ```dart
 void main(){
     // code starts here
@@ -20,12 +20,12 @@ void main(){
     // code ends here
 }
 ```
-For now just paste the above code snippet in your dartpad workspace and we will write all our code between those two `code starts here` and `code
+For now just paste the above code snippet in your [dartpad](https://dartpad.dartlang.org/) workspace, and we will write all our code between those two `code starts here` and `code
 ends here` lines.
 
 # Declaration and Initialization of Variables
 
-What is a variable? Well a variable is a container, which jsut holds some value in your program. Let's say you want to store the value of `pi` in 
+What is a variable? Well a variable is a container, which just holds some value in your program. Let's say you want to store the value of `pi` in 
 your program, you need some place, a container to store that number `3.14`. That container is a variable.
 
 To use a variable in your program you must declare and initialize it. So what is declaring and initializing a variable?
@@ -89,5 +89,4 @@ Notice two things here, I changed the value of `c` to a string, I cannot do the 
 There you go guys, you made it to the end of the blog. Please check out the video below if you still have any doubts, subscribe to my [youtube channel](https://www.youtube.com/channel/UC4syrEYE9_fzeVBajZIyHlA) for regular updates, subscribe to my mailing list below, follow me on [twitter](https://www.twitter.com/rishabhjain1403) , drop me a mail or leave a comment here if you still have any doubts and I will try my best to help you out. Thanks
 
 Stay tuned and see you around :)
-<!--
-{{< youtube I8_pURh3l_s >}}  -->
+{{< youtube gL7hifdjsoY >}} 
