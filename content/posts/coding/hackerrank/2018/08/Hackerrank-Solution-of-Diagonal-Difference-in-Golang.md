@@ -1,18 +1,18 @@
 ---
-title: "Hackerrank Solution of Diagonal Difference in Golang"
+title: "Hackerrank | Solution of Diagonal Difference in Golang"
 description: "In this post we will solve the question diagonal difference from hackerrank in golang. We will learn how to create and use a 2-D matrix in Golang and how to traverse over it. Let's get started. "
 author: "Rishabh Jain"
-keywords: ["rishabh","rishabh jain","rishabh1403","blog"]
-tags: []
-categories: []
-date: 2018-08-30T11:23:56+05:30
-draft: true
+keywords: ["rishabh","rishabh jain","rishabh1403","blog","hackerrank","coding","golang","language","go","competitive","programming","sport","daigonal","difference","matrix in golang","multi dimension array","2D","array"]
+tags: ["hackerrank","coding","golang"]
+categories: ["hackerrank","coding","golang"]
+date: 2018-08-30T19:05:56+05:30
+draft: false
 ---
 In this post we will solve the question diagonal difference from hackerrank in golang. We will learn how to create and use a 2-D matrix in Golang and how to traverse over it. Let's get started.
 <!--more-->
 # Problem Statement
 
-The question can be found at this [link](https://www.hackerrank.com/challenges/diagonal-difference/problem). The problem statement states that we need to calulate the absolute difference of sum of elements of left and diagonal of a square matrix(a 2-D array whose rows and columns length are same).
+The question can be found at this [link](https://www.hackerrank.com/challenges/diagonal-difference/problem). The problem statement states that we need to calculate the absolute difference of sum of elements of left and diagonal of a square matrix(a 2-D array whose rows and columns length are same).
 
 Couple of things to note here is 
 
@@ -149,7 +149,7 @@ Now you must be thinking, let's go ahead and change `var` to `const` to make sur
     
 ```
 
-In the above code snippet, we are creating a 2-D array `a` of `int` type, and stating that it will hold `n` number of rows. We have just allocated the memory for `n` rows, we still have to specify number of columns for each row and allocate memory for it. Somehow we need to loop over the number of rows, and for each row allocate `n` columns of memory. So at this point of time it is pretty clear that , we are going to loop over the rows, now can we just create another innner loop to loop over columns, take each input and do our calculations? Ofcourse we can, and that is exactly what we are going to do.
+In the above code snippet, we are creating a 2-D array `a` of `int` type, and stating that it will hold `n` number of rows. We have just allocated the memory for `n` rows, we still have to specify number of columns for each row and allocate memory for it. Somehow we need to loop over the number of rows, and for each row allocate `n` columns of memory. So at this point of time it is pretty clear that , we are going to loop over the rows, now can we just create another inner loop to loop over columns, take each input and do our calculations? Yes we can, and that is exactly what we are going to do.
 
 ```go
     ...
@@ -167,13 +167,13 @@ In the above code snippet, we are creating a 2-D array `a` of `int` type, and st
 
 Okay, here we have a bunch of code, let's start exploring what they mean. On the first line, I am declaring and initializing two variables to store our left diagonal and right diagonal sum. Next we are looping over the number of rows and allocating memory for `n` columns for each row of the matrix. Again we are using `make` to allocate memory and are specifying that `a[i]` will be an array of `int` type of length `n`. Next we are looping over the number of columns for each row. Now that we have successfully created our nested loops which would traverse over the matrix in the order that we want, we are ready to take inputs for each index. Next we are taking inputs for each index. Now we will write the logic to determine if the element belongs to left diagonal or right diagonal and add it to correct variable accordingly.
 
-# Left and Right Daigonals
+# Left and Right Diagonals
 
-Refer the picture below, and forgive me for my bad drawing, still learing how to use some of the drawing tools
+Refer the picture below, and forgive me for my bad drawing, still learning how to use some of the drawing tools
 
 ![diagonal.png](/posts/coding/hackerrank/2018/08/diagonal.png)
 
-The elements in green and brown are the elements that belong to left diagonal, while the element which are in yellow and brown belong to the right diagonal. Notice the indexing in the boxes, if you look the indexes for the left diagonal, both the row number and thr column number are same. Here we got our first condition to determine if an elemnt belongs to left diagonal. For the right diagonal, if you notice, the sum of the indexes are always `2` in our case, I want you to try it out for other higher order matrix, say 4\*4 matrix. You'll notice that it always equal to `size - 1` of matrix. Now we got both of our conditions to determine the elements of left and right diagonal. Let's replace the comments with original sum logic
+The elements in green and brown are the elements that belong to left diagonal, while the element which are in yellow and brown belong to the right diagonal. Notice the indexing in the boxes, if you look the indexes for the left diagonal, both the row number and the column number are same. Here we got our first condition to determine if an element belongs to left diagonal. For the right diagonal, if you notice, the sum of the indexes are always `2` in our case, I want you to try it out for other higher order matrix, say 4\*4 matrix. You'll notice that it always equal to `size - 1` of matrix. Now we got both of our conditions to determine the elements of left and right diagonal. Let's replace the comments with original sum logic
 
 ```go
 
@@ -255,10 +255,9 @@ Now that we have completed our code, the complete one should look like
     }
 ```
 
-We learned a lot of good stuff in this one, and we are definetely making good progress on our hackerrank golang journey. That's it for this one. See you in the next one.
+We learned a lot of good stuff in this one, and we are definitely making good progress on our hackerrank golang journey. That's it for this one. See you in the next one.
 
 There you go guys, you made it to the end of the blog. Please check out the video below if you still have any doubts. Subscribe to my [youtube channel](https://www.youtube.com/channel/UC4syrEYE9_fzeVBajZIyHlA) and my mailing list below for regular updates. Follow me on [twitter](https://www.twitter.com/rishabhjain1403) , drop me a mail or leave a comment here if you still have any doubts and I will try my best to help you out. Thanks
 
 Stay tuned and see you around :)
-<!--
-{{< youtube I8_pURh3l_s >}}  -->
+{{< youtube 4b0RpyRfKY8 >}}  
