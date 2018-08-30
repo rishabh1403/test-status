@@ -10,21 +10,19 @@ draft: false
 ---
 Solution for hackerrank warmup question a very big sum in golang. This question is very similar to simple array sum problem. The only difference being that the input array is huge. Let's tackle that in this blog post.
 <!--more-->
-<div>&nbsp;</div>
 # Problem Statement
 The question can be found at this [link](https://www.hackerrank.com/challenges/a-very-big-sum/problem). The problem statement basically states that we need to print the sum of an array of integers whose length is provided as input.
 Couple of things to note here is 
-<div>&nbsp;</div>
+
 * We need to take array length as input
 * In the next line, we are provided with an array of numbers, whose sum we need to print
 * The integers in the array are huge ( `0<= i <= 10^10` )
 * we are solving this in [golang](https://golang.org/) **(assuming we know how to take input in [golang](https://golang.org/), refer to my [last post](https://rishabh1403.com/posts/coding/hackerrank/2018/08/hackerrank-solve-me-first-solution/) in case you need a refresher )**
-<div>&nbsp;</div>
 
 # Challenges
+
 * Choose our preferred language as [golang](https://golang.org/) on hackerrank. The moment we do that, we get some 50-60 lines of code which are very unfamiliar to someone who is new to language.
 * To solve this problem only thing we need to know is how to take input, show output, iterate over an array(_kind of_), and calculate sum.
-<div>&nbsp;</div>
 
 # Solution
 
@@ -113,7 +111,6 @@ func main(){
 }
 ```
 The same code works here too, so what is all the fuss about long integers? Actually, although this code runs all well and good, the compiler is expecting a slightly different answer from you. An answer which would demonstrate that you understand that the concepts of memory and bits in a program. Now let me show you what I am talking about. 
-<div>&nbsp;</div>
 
 ```go
 package main
@@ -135,7 +132,6 @@ Notice in this code snippet I made two changes
 * `i:=0` is type casted to int64 type
 
 Basically this explicitly tells the compiler to allocate 64bits of memory for these variables. Technically the range of **n** (length of array) is  1 to 10, so we could have specified int type for **n** and no type casting would have been required, or even a smaller signed type would have worked, with a type casting while initializing **i**. 
-<div>&nbsp;</div>
 
 Now the bigger question is why did the code with declaration of variables with `int` type work? The way golang works is int takes 32bit or 64bit depending on the platform. So if your platform running the code supported 64bit, int would have handled 64bit values and code would run just fine else it would fall back to 32bit. However if your platform doesn't support 64bit, int64 **won't** work either.
 So that is the reason both of the code snippets work and pass all the test cases.
