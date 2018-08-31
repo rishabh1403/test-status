@@ -2,7 +2,7 @@
 title: "{{ replace .TranslationBaseName "-" " " }}"
 description: "{{ replace .TranslationBaseName "-" " " }}"
 author: "Rishabh Jain"
-keywords: ["rishabh","rishabh jain","rishabh1403","blog"]
+keywords: ["rishabh","jain","rishabh jain","rishabh1403","blog","competitive","coding","programming","tech","technology"]
 tags: []
 categories: []
 date: {{ .Date }}
