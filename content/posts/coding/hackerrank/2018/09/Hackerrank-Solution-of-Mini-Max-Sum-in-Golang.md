@@ -162,8 +162,7 @@ Pretty straight forward, calculating min sum, max sum and printing it. Now our c
     }
 
 ```
-
-This is it for this one, complete source code for this post can be found on my [Github Repo](https://github.com/rishabh1403/hackerrank-golang-solutions/blob/master/practice/algorithms/warmup/mini-max-sum.go). Will see you in the next one.
+Now that we have a working solution, let's discuss why we didn't go with our `[]int` declaration and instead went ahead with `make`. So in the first case we get an array while in second case we get a slice which refers to an array. What are slices? Slices are just like arrays, but their length is not fixed. They can grow and shrink. So why did we need slices? The reason is very simple, the `Ints` function from `sort` package takes a slice as an argument instead of an array, thus we went ahead and used a slice. Can we still solve this question using arrays? Yes, sort the array yourself. The length is very small, even if you use selection sort, no worries. Is there any other way to declare and work with slices? Yes we will look into some very soon. This is it for this one, complete source code for this post can be found on my [Github Repo](https://github.com/rishabh1403/hackerrank-golang-solutions/blob/master/practice/algorithms/warmup/mini-max-sum.go). Will see you in the next one.
  
 There you go guys, you made it to end of the post. Please check out the video below if you still have any doubts. Subscribe to my [youtube channel](https://www.youtube.com/channel/UC4syrEYE9_fzeVBajZIyHlA) and my mailing list below for regular updates. Follow me on [twitter](https://www.twitter.com/rishabhjain1403) , drop me a mail or leave a comment here if you still have any doubts and I will try my best to help you out. Thanks
 
