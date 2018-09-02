@@ -1,17 +1,17 @@
 ---
-title: "min max"
-description: "min max"
+title: "Hackerrank | Solution of Mini-Max Sum in Golang"
+description: "In this post we will solve question mini-max sum from hackerrank. Here we will learn a bit about make in golang along with a new golang package called sort. Let's get started."
 author: "Rishabh Jain"
-keywords: ["rishabh","jain","rishabh jain","rishabh1403","blog","competitive","coding","programming","tech","technology"]
-tags: []
-categories: []
-date: 2018-09-01T13:51:00+05:30
-draft: true
+keywords: ["solution","hackerrank","go","golang","mini-max sum","sorting","rishabh","jain","rishabh jain","rishabh1403","blog","competitive","coding","programming","tech","technology"]
+tags: ["hackerrank","coding","golang"]
+categories: ["hackerrank","coding","golang"]
+date: 2018-09-02T18:40:00+05:30
+draft: false
 ---
 In this post we will solve question mini-max sum from hackerrank. Here we will learn a bit about make in golang along with a new golang package called sort. Let's get started.
 <!--more-->
 # Problem Statement
-The question can be found at this [link](https://www.hackerrank.com/challenges/mini-max-sum/problem). The problem statement basically states that we are given an array of five integers and we need to print maximum possible sum of any four numbers and minimum possible sum of any four numbers.
+The question can be found at this [link](https://www.hackerrank.com/challenges/mini-max-sum/problem). The problem statement basically states that we are given an array of five integers, and we need to print maximum possible sum of any four numbers and minimum possible sum of any four numbers.
 Couple of things to note here is 
 
 * We need to take an array as input.
@@ -28,7 +28,55 @@ Couple of things to note here is
 This is the template you get on [hackerrank](https://www.hackerrank.com/) for this problem statement.
 
 ```go
-//TODO add template
+    package main
+
+    import (
+        "bufio"
+        "fmt"
+        "io"
+        "os"
+        "strconv"
+        "strings"
+    )
+
+    // Complete the miniMaxSum function below.
+    func miniMaxSum(arr []int32) {
+
+
+    }
+
+    func main() {
+        reader := bufio.NewReaderSize(os.Stdin, 1024 * 1024)
+
+        arrTemp := strings.Split(readLine(reader), " ")
+
+        var arr []int32
+
+        for i := 0; i < 5; i++ {
+            arrItemTemp, err := strconv.ParseInt(arrTemp[i], 10, 64)
+            checkError(err)
+            arrItem := int32(arrItemTemp)
+            arr = append(arr, arrItem)
+        }
+
+        miniMaxSum(arr)
+    }
+
+    func readLine(reader *bufio.Reader) string {
+        str, _, err := reader.ReadLine()
+        if err == io.EOF {
+            return ""
+        }
+
+        return strings.TrimRight(string(str), "\r\n")
+    }
+
+    func checkError(err error) {
+        if err != nil {
+            panic(err)
+        }
+    }
+
 ```
 * First go ahead and delete everything in the pre-existing template.
 * Let's write down our main wrapper function.
@@ -41,7 +89,7 @@ func main(){
 
 }
 ```
-First thing we need is an array to store our elements. We won't be taking inputs in a temporary variable, since we need to do some sorting operaton on the array later on. If you remember from the earlier posts we used `var a [3]int` to declare an array, and we have also seen why this approach only works for constants. This time we have a constant length i.e. 5 for the array, still we are going to use `make` to allocate the memory for array and will not use `[]int` declaration. Please bear with me for sometime, and I'll explain the reason behind the decision. So let's go ahead declare our array.
+First thing we need is an array to store our elements. We won't be taking inputs in a temporary variable, since we need to do some sorting operation on the array later on. If you remember from the earlier posts we used `var a [3]int` to declare an array, and we have also seen why this approach only works for constants. This time we have a constant length i.e. 5 for the array, still we are going to use `make` to allocate the memory for array and will not use `[]int` declaration. Please bear with me for sometime, and I'll explain the reason behind the decision. So let's go ahead declare our array.
 
 ```go
 
@@ -115,10 +163,9 @@ Pretty straight forward, calculating min sum, max sum and printing it. Now our c
 
 ```
 
-This is it for this one, complete source code for this post can be found on my [Github Repo](). Will see you in the next one.
+This is it for this one, complete source code for this post can be found on my [Github Repo](https://github.com/rishabh1403/hackerrank-golang-solutions/blob/master/practice/algorithms/warmup/mini-max-sum.go). Will see you in the next one.
  
 There you go guys, you made it to end of the post. Please check out the video below if you still have any doubts. Subscribe to my [youtube channel](https://www.youtube.com/channel/UC4syrEYE9_fzeVBajZIyHlA) and my mailing list below for regular updates. Follow me on [twitter](https://www.twitter.com/rishabhjain1403) , drop me a mail or leave a comment here if you still have any doubts and I will try my best to help you out. Thanks
 
 Stay tuned and see you around :)
-<!--
-{{< youtube I8_pURh3l_s >}}  -->
+{{< youtube -LlUwKzx-0k >}}
