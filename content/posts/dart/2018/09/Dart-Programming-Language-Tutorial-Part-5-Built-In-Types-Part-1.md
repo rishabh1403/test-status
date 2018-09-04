@@ -6,7 +6,7 @@ keywords: ["rishabh","dart","dartlang","built-in types","numbers","strings","boo
 tags: ["dart","tutorial"]
 categories: ["dart"]
 date: 2018-09-04T21:30:59+05:30
-draft: true
+draft: false
 ---
 In this post we will discuss some of the built-in types in dart. We will cover numbers, strings, and booleans. Let's get started.
 <!--more-->
