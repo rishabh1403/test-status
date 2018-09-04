@@ -1,13 +1,14 @@
 ---
-title: "built in part 1"
-description: "built in part 1"
+title: "Dart Programming Language Tutorial Part 5 | Built-In Types Part 1"
+description: "In this post we will discuss some of the built-in types in dart. We will cover numbers, strings, and booleans. Let's get started."
 author: "Rishabh Jain"
-keywords: ["rishabh","jain","rishabh jain","rishabh1403","blog","competitive","coding","programming","tech","technology"]
-tags: []
-categories: []
-date: 2018-08-31T21:08:59+05:30
+keywords: ["rishabh","dart","dartlang","built-in types","numbers","strings","booleans","jain","rishabh jain","rishabh1403","blog","competitive","coding","programming","tech","technology"]
+tags: ["dart","tutorial"]
+categories: ["dart"]
+date: 2018-09-04T21:30:59+05:30
 draft: true
 ---
+In this post we will discuss some of the built-in types in dart. We will cover numbers, strings, and booleans. Let's get started.
 <!--more-->
 # Built-in Types
 
