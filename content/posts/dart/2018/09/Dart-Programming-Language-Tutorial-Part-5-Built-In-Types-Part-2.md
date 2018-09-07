@@ -2,11 +2,11 @@
 title: "Dart Programming Language Tutorial Part 5 | Built-In Types Part 2"
 description: "In the last post we discussed numbers, strings and booleans. In this one, we will conclude built-in types by discussing lists and maps. Let's get started."
 author: "Rishabh Jain"
-keywords: ["rishabh","jain","rishabh jain","rishabh1403","blog","competitive","coding","programming","tech","technology"]
-tags: []
-categories: []
-date: 2018-09-06T10:40:11+05:30
-draft: true
+keywords: ["dart","dartlang","built-in types","list","maps","rishabh","jain","rishabh jain","rishabh1403","blog","competitive","coding","programming","tech","technology"]
+tags: ["dart","tutorial"]
+categories: ["dart"]
+date: 2018-09-07T19:45:11+05:30
+draft: false
 ---
 In the last post we discussed numbers, strings and booleans. In this one, we will conclude built-in types by discussing lists and maps. Let's get started.
 <!--more-->
@@ -59,14 +59,69 @@ Let's discuss the above code snippet. First we are creating a list, next we are 
 
 # Maps in Dart
 
+Maps in dart are some kay-value pair. If you are coming from ***java***, it is very similar to hashmaps. Let's say, you wanted to store the marks of all the students in a class, you would you a list, but if you wanted to store it along with their name in a way where when asked for marks of a particular student, you should be able to tell it instantly without looking through all the items, you would use a Map. You would use names as a key and marks as values to those keys. Let's look at different ways in which you can declare a map.
 
+```dart
 
+    var a = {
+        "abc" : 1,
+        "sdf" : 2    
+    };
+    
+    var b = {
+        2 : "de",
+        3 : "eff"    
+    };
+    
+    var c = {
+        1 : "de",
+        2 : "rr",
+        "Dede" : 22,
+            
+    } ;
 
+   Map<String,int> d = {
+        "abc" : 1,
+        "sdf" : 2    
+    };
+    
+    Map<int,String> e = {
+        2 : "de",
+        3 : "eff"    
+    };
+    
+    Map<dynamic, dynamic> f = {
+        1 : "de",
+        2 : "rr",
+        "Dede" : 22,
+            
+    } ;
 
-This is it for this one, complete source code for this post can be found on my [Github Repo](//TODO ADD repo). Will see you in the next one.
+```
 
-There you go guys, you made it to end of the post. Please check out the video below if you still have any doubts. Subscribe to my [youtube channel](https://www.youtube.com/channel/UC4syrEYE9_fzeVBajZIyHlA) and my mailing list below for regular updates. Follow me on [twitter](https://www.twitter.com/rishabhjain1403) , drop me a mail or leave a comment here if you still have any doubts and I will try my best to help you out. Thanks
+We have six maps declared above. Let's look at them one by one. First let me point it to you that as always `var` will auto infer the type during declaration. Now In case of `a` the key's are always string and values are always integers, so the type of maps become `Map<String,int>`. In second case the key is an integer, and the value is an string so the type of map is `Map<int,String>`. Now since these were well defined, the types were locked and you cannot assign a new value to map which doesn't adhere to the inferred type here, however in the third type, durin assignment we have dynamic key type as well as dynamic value type, hence `var` auto infers it to `Map<dynamic,dynamic>` and any type of key-value pair can be put in the map. We have another way of declaring a map, i.e. by using `Map<type,type>`, here we specifically lock the type of map. Let's how we can change and reference a key-value pair in a map and how to create a constant map.
+
+```dart
+
+    var a = {
+        "abs" : 12    
+    };
+
+    print(a["abs"]);  // 12
+
+    a["abs"] = 13;
+
+    print(a["abs"]);  // 13
+
+    var b = const {
+        "abs" : 12
+    };
+
+    b["abs"] = 13;    // error
+
+```
+
+We reference maps just like lists, using `[]`. We can change or add the values using the square bracket too. Declaring a map constant is very similar to list as well. We can also find length of a map just like a list too. This is it for this one. Will see you in the next one. There you go guys, you made it to end of the post. Please check out the video below if you still have any doubts. Subscribe to my [youtube channel](https://www.youtube.com/channel/UC4syrEYE9_fzeVBajZIyHlA) and my mailing list below for regular updates. Follow me on [twitter](https://www.twitter.com/rishabhjain1403) , drop me a mail or leave a comment here if you still have any doubts and I will try my best to help you out. Thanks
 
 Stay tuned and see you around :)
-<!--
-{{< youtube I8_pURh3l_s >}}  -->
+{{< youtube CkDwBHWnopU >}}
