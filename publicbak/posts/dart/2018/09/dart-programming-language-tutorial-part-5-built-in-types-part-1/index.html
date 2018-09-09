@@ -13,8 +13,8 @@
     
   
   
-  <meta name="twitter:title" content="Dart Programming Language Tutorial Part 4 | Comments"/>
-  <meta name="twitter:description" content="In this post we will look into various ways in which we can write comments in dart. Let&#39;s get started."/>
+  <meta name="twitter:title" content="Dart Programming Language Tutorial Part 5 | Built-In Types Part 1"/>
+  <meta name="twitter:description" content="In this post we will discuss some of the built-in types in dart. We will cover numbers, strings, and booleans. Let&#39;s get started."/>
   
     <meta name="twitter:site" content="@rishabhjain1403"/>
   
@@ -31,11 +31,11 @@
                 
 		<meta name="generator" content="Hugo 0.25.1" />
                 
-                <meta name="description" content="In this post we will look into various ways in which we can write comments in dart. Let&#39;s get started.">
+                <meta name="description" content="In this post we will discuss some of the built-in types in dart. We will cover numbers, strings, and booleans. Let&#39;s get started.">
                 
-	  <meta name="keywords" content="rishabh, rishabh jain, rishabh1403, blog, comments, dart, dartlang, tutorial, programming, language, solution">
+	  <meta name="keywords" content="rishabh, dart, dartlang, built-in types, numbers, strings, booleans, jain, rishabh jain, rishabh1403, blog, competitive, coding, programming, tech, technology">
 	
-                <title>Dart Programming Language Tutorial Part 4 | Comments &middot; Rishabh Jain</title>
+                <title>Dart Programming Language Tutorial Part 5 | Built-In Types Part 1 &middot; Rishabh Jain</title>
 		<link rel="shortcut icon" href="https://rishabh1403.com/images/favicon.ico">
 		<link rel="stylesheet" href="https://rishabh1403.com/css/style.css">
 		<link rel="stylesheet" href="https://rishabh1403.com/css/highlight.css">
@@ -87,12 +87,12 @@
             <article>
                 <header>
                     <h1>
-                        Dart Programming Language Tutorial Part 4 | Comments
+                        Dart Programming Language Tutorial Part 5 | Built-In Types Part 1
                     </h1>
                     <h2 class="headline">
-                    Aug 30, 2018 01:15
-                    · 532 words
-                    · 3 minute read
+                    Sep 4, 2018 21:30
+                    · 710 words
+                    · 4 minute read
                       <span class="tags">
                       
                       
@@ -111,87 +111,84 @@
                     <div id="toc">
                       <nav id="TableOfContents">
 <ul>
-<li><a href="#quick-note">Quick Note</a></li>
-<li><a href="#comments">Comments</a>
-<ul>
-<li><a href="#single-line-comments">Single line comments</a></li>
-<li><a href="#multi-line-comments">Multi line comments</a></li>
-<li><a href="#documentation-comments">Documentation comments</a></li>
-</ul></li>
+<li><a href="#built-in-types">Built-in Types</a></li>
+<li><a href="#numbers">Numbers</a></li>
+<li><a href="#booleans">Booleans</a></li>
+<li><a href="#string">String</a></li>
 </ul>
 </nav>
                     </div>
                   
                 
                 <section id="post-body">
-                    <p>In this post we will look into various ways in which we can write comments in dart. Let&rsquo;s get started.
+                    <p>In this post we will discuss some of the built-in types in dart. We will cover numbers, strings, and booleans. Let&rsquo;s get started.
 </p>
 
-<h1 id="quick-note">Quick Note</h1>
+<h1 id="built-in-types">Built-in Types</h1>
 
-<p>If you notice our original road map, we had data types before comments. Comments were the third topic in the list, but we are taking it just after variables. There are two reasons for this quick diversion</p>
+<p>What are built-in types? These are the types that a variable can be of and are already defined in dart i.e. built into dart programming language by default. Does that mean we can have our own custom types too ? Yes, we can. So dart is an object oriented programming language, and everything is an object. Every variable in Dart refers to an object i.e. it is an instance of a class. To make our custom type we just need to make sure the variable is an object, an instance of a class that we wrote, and that is how we can have our own type of variables. Pretty cool ha..!!!. We will look into creating classes and objects later on, for now let&rsquo;s stick to these built-in types and discuss these in detail. There are two parts of this post, in this one we will discuss about <strong><em>numbers, strings, and booleans</em></strong> and we will conclude the rest of them in the next one.</p>
 
-<ul>
-<li>Comments are a very small and easy topic, let&rsquo;s get it out of the way</li>
-<li>We are already using it from the very first post!!!</li>
-</ul>
+<h1 id="numbers">Numbers</h1>
 
-<h1 id="comments">Comments</h1>
-
-<p>There are many times when our long, complex code becomes cryptic and putting in some help text in there becomes necessary, so that someone else looking at the code or even the one who wrote it, looking at it later in time can understand it well. These help text are generally in plain text, strings, that can be simple plain English or any other language that you might be comfortable with. These comments can be small (adjusted in single line), big explanations (multi line), and can used for formally documenting your code. Now we need some way for our dart compiler to ignore these comments, because these do not wrap program logic, they don&rsquo;t affect output or behaviour of the program. Comments are just for our ease, to help us understand our own code or others code better.</p>
-
-<p>We have three types of comments in dart. Let&rsquo;s look into then one by one.</p>
-
-<h2 id="single-line-comments">Single line comments</h2>
-
-<p>Single line comments are, well comments that fit in a single line. To write a single line comment we start the line with <code>//</code>  and write our comment. If you remember our two lines <code>code starts here</code> and <code>code ends here</code> used to start with <code>//</code>. Those two lines were single line comments.</p>
+<p>Numbers are used to store umm&hellip; numbers. Numbers can be any positive, negative or zero number. In Dart numbers are represented by either <code>int</code> or <code>double</code>. <strong><em>Int</em></strong> is to integers i.e. numbers without decimals while <strong><em>Double</em></strong> is to store decimal numbers or floating point numbers. Let&rsquo;s see an example</p>
 
 <pre><code class="language-dart">
-    // this is a single line comment
+    int a = -2;
+    int b = 3;
+    int c = 0;
+    
+    double e = -2.5;
+    double f = 0.0;
+    double g = 1.5;
+    
+</code></pre>
+
+<p>So this is how we use <code>int</code> and <code>double</code> in our Dart code. We have already used <code>int</code> before and will be using <code>double</code> in coming posts.</p>
+
+<h1 id="booleans">Booleans</h1>
+
+<p>Booleans are as straight forward as it can be. If you need to store a <code>true</code> or <code>false</code> flag in your variable, you would use a boolean type of variable. To declare a variable boolean we would use <code>bool</code>. We will revisit bool again while dealing with <code>if-else</code>, but for the scope of this artice, I guess that is all to know about booleans.</p>
+
+<pre><code class="language-dart">    bool isItRaining = true;
+    bool isItSunny = false;
+</code></pre>
+
+<h1 id="string">String</h1>
+
+<p>Next on list, and the last one for this post is <strong><em>Strings</em></strong>. Strings are a single or group of characters. It can be a letter or a number or group of combination of both. It can also include symbols like <code>!@#$%^&amp;*</code> . Strings are very useful to store text data. To declare a string you would use <code>String</code> to declare a variable <strong><em>(notice the use of capital S)</em></strong>. The text that is assigned to a string variable has to be wrapped in <strong><em>quotes</em></strong> . It can be either single quote, double quote or triple quotes. Let&rsquo;s look at those declarations</p>
+
+<pre><code class="language-dart">
+    String str = 'This is a string';
+    String str1 = &quot;This is another string&quot;;
+    String str2 = ''' This is a multi line string
+                        which I can continue in different lines
+                        which provides easy formatting''';
 
 </code></pre>
 
-<h2 id="multi-line-comments">Multi line comments</h2>
-
-<p>Multi line comments are comments that can be written in multiple lines. They start with <code>/*</code> and end with <code>*/</code>. Basically, everything that these two wraps become comments. Multi-line comments are very useful to describe complex program logic. Let&rsquo;s see an example</p>
+<p>Over here we see all three types of string declarations. The declaration with single quotes and double quotes are pretty much the same. We would wrap the text in single or double quotes and that is it. The declaration with triple quotes are interesting because here we can write in multiline. We can use line breaks, put spaces whereevr and however we want. This becomes really handy when you are writting long database queries. Multi-line strings can also be declared using <code>&quot;&quot;&quot;</code>, using three single quotes is not mandatory. So we can also do something like this</p>
 
 <pre><code class="language-dart">
-    /* 
-
-    This is a multi-line comment.
-    I can go to next line too.
-    I can write code here.
-    int a =0;
-    this code won't run.
-
-    */
+    String str = &quot;&quot;&quot; This
+                    is also a valid multi line string &quot;&quot;&quot;;
 
 </code></pre>
 
-<h2 id="documentation-comments">Documentation comments</h2>
-
-<p>Documentation comments are used to write documentation inside code. It can be single line using <code>///</code> or multiline <code>/**</code> . The difference between a normal comment and a documentation comment is compiler ignores the documentation comments except for the text inside <code>[]</code> . It creates a link when passed through a documentation generation tool.</p>
-
-<pre><code class="language-dart">
-    /// variable [alpha] holds the value of the result from the complex calculation
-
-</code></pre>
-
-<p>Here <code>[alpha]</code> will become a link to the original variable alpha where it was declared.</p>
+<p>That&rsquo;s it for this one, there are some more things to cover in Strings which we will cover shortly. See you in the next one.</p>
 
 <p>There you go guys, you made it to the end of the blog. Please check out the video below if you still have any doubts. Subscribe to my <a href="https://www.youtube.com/channel/UC4syrEYE9_fzeVBajZIyHlA">youtube channel</a> and my mailing list below for regular updates. Follow me on <a href="https://www.twitter.com/rishabhjain1403">twitter</a> , drop me a mail or leave a comment here if you still have any doubts and I will try my best to help you out. Thanks</p>
 
 <p>Stay tuned and see you around :)
 
 <div style="position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;">
-  <iframe src="//www.youtube.com/embed/REP2btkSM7k" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen frameborder="0"></iframe>
+  <iframe src="//www.youtube.com/embed/WCNVPQ1sB6o" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen frameborder="0"></iframe>
  </div>
 </p>
                 </section>
             </article>
 
             
-                <a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2frishabh1403.com%2fposts%2fdart%2f2018%2f08%2fdart-programming-language-tutorial-part-4-comments%2f - Dart%20Programming%20Language%20Tutorial%20Part%204%20%7c%20Comments by @rishabhjain1403"><span class="icon-twitter"> tweet</span></a>
+                <a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2frishabh1403.com%2fposts%2fdart%2f2018%2f09%2fdart-programming-language-tutorial-part-5-built-in-types-part-1%2f - Dart%20Programming%20Language%20Tutorial%20Part%205%20%7c%20Built-In%20Types%20Part%201 by @rishabhjain1403"><span class="icon-twitter"> tweet</span></a>
 
 <a class="facebook" href="#" onclick="
     window.open(
@@ -236,10 +233,6 @@
         </li>
     
         <li>
-            <a href="/posts/dart/2018/09/dart-programming-language-tutorial-part-5-built-in-types-part-1/">Dart Programming Language Tutorial Part 5 | Built-In Types Part 1<aside class="dates">Sep 4 2018</aside></a>
-        </li>
-    
-        <li>
             <a href="/posts/coding/hackerrank/2018/09/hackerrank-solution-of-birthday-cake-candles-in-golang/">Hackerrank | Solution of Birthday Cake Candles in Golang<aside class="dates">Sep 3 2018</aside></a>
         </li>
     
@@ -257,6 +250,10 @@
     
         <li>
             <a href="/posts/coding/hackerrank/2018/08/hackerrank-solution-of-diagonal-difference-in-golang/">Hackerrank | Solution of Diagonal Difference in Golang<aside class="dates">Aug 30 2018</aside></a>
+        </li>
+    
+        <li>
+            <a href="/posts/dart/2018/08/dart-programming-language-tutorial-part-4-comments/">Dart Programming Language Tutorial Part 4 | Comments<aside class="dates">Aug 30 2018</aside></a>
         </li>
     
         <li>

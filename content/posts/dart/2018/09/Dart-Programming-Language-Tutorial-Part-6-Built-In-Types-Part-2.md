@@ -1,5 +1,5 @@
 ---
-title: "Dart Programming Language Tutorial Part 5 | Built-In Types Part 2"
+title: "Dart Programming Language Tutorial Part 6 | Built-In Types Part 2"
 description: "In the last post we discussed numbers, strings and booleans. In this one, we will conclude built-in types by discussing lists and maps. Let's get started."
 author: "Rishabh Jain"
 keywords: ["dart","dartlang","built-in types","list","maps","rishabh","jain","rishabh jain","rishabh1403","blog","competitive","coding","programming","tech","technology"]
