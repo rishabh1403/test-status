@@ -5,8 +5,8 @@ author: "Rishabh Jain"
 keywords: ["rishabh","jain","rishabh jain","rishabh1403","blog","competitive","coding","programming","tech","technology","dart","dartlang","if-else","ternary","operators","syntax"]
 tags: ["dart","tutorial"]
 categories: ["dart"]
-date: 2018-09-10T10:26:19+05:30
-draft: true
+date: 2018-09-10T19:45:19+05:30
+draft: false
 ---
 In this post we will cover the if-else statement in Dart. If-else block is one of the basic building blocks of many programming languages, let's look into it right away.
 <!--more-->
@@ -102,5 +102,4 @@ Okay so everything we have inside the print is part of our ternary operator. Ter
 There you go guys, you made it to end of the post. Please check out the video below if you still have any doubts. Subscribe to my [youtube channel](https://www.youtube.com/channel/UC4syrEYE9_fzeVBajZIyHlA) and my mailing list below for regular updates. Follow me on [twitter](https://www.twitter.com/rishabhjain1403) , drop me a mail or leave a comment here if you still have any doubts and I will try my best to help you out. Thanks
 
 Stay tuned and see you around :)
-<!--
-{{< youtube I8_pURh3l_s >}}  -->
+{{< youtube zOyVj81gYnw >}}  
