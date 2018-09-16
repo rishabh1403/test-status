@@ -5,8 +5,8 @@ author: "Rishabh Jain"
 keywords: ["rishabh","jain","rishabh jain","rishabh1403","blog","competitive","coding","programming","tech","technology","go","golang","hackerrank","grading students","multiple of five"]
 tags: ["hackerrank","coding","golang"]
 categories: ["hackerrank","coding","golang"]
-date: 2018-09-16T12:59:13+05:30
-draft: true
+date: 2018-09-16T23:35:13+05:30
+draft: false
 ---
 In this post we will solve question grading students from hackerrank in golang. Let's dive right into it.
 <!--more-->
@@ -194,5 +194,4 @@ Let's review what are the highlights to take away from this question. To get a l
 There you go guys, you made it to end of the post. Please check out the video below if you still have any doubts. Subscribe to my [youtube channel](https://www.youtube.com/channel/UC4syrEYE9_fzeVBajZIyHlA) and my mailing list below for regular updates. Follow me on [twitter](https://www.twitter.com/rishabhjain1403) , drop me a mail or leave a comment here if you still have any doubts and I will try my best to help you out. Thanks
 
 Stay tuned and see you around :)
-<!--
-{{< youtube I8_pURh3l_s >}}  -->
+{{< youtube Dk7QrcfYBjE >}}  
