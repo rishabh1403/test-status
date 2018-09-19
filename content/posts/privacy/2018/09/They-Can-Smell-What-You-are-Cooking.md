@@ -1,6 +1,6 @@
 ---
 title: "They Can Smell What You are Cooking"
-description: "They Can Smell What You are Cooking"
+description: "In this post we will discuss some of the privacy concerns that we will face while we browse the internet. Have a safe browsing!!!."
 author: "Rishabh Jain"
 keywords: ["rishabh","jain","rishabh jain","rishabh1403","blog","competitive","coding","programming","tech","technology","privacy","cookies","browser cookies","safety","incognito"]
 tags: ["privacy"]
@@ -8,6 +8,8 @@ categories: ["privacy"]
 date: 2018-09-19T21:06:20+05:30
 draft: false
 ---
+In this post we will discuss some of the privacy concerns that we will face while we browse the internet. Have a safe browsing!!!.
+<!--more-->
 
 ![Incognito](/posts/privacy/2018/09/incognito-2231825_640.png "Coutesy - https://pixabay.com/en/incognito-private-browsing-browsing-2231825/")
 
