@@ -5,8 +5,8 @@ author: "Rishabh Jain"
 keywords: ["rishabh","jain","rishabh jain","rishabh1403","go","golang","hackerrank","apple and orange","hackerrank solutions","blog","competitive","coding","programming","tech","technology"]
 tags: ["hackerrank","coding","golang"]
 categories: ["hackerrank","coding","golang"]
-date: 2018-09-19T20:00:26+05:30
-draft: true
+date: 2018-09-19T20:55:26+05:30
+draft: false
 ---
 In this post we will solve question apple and orange from hackerrank implementation section. A very easy one, let's dive right into it.
 <!--more-->
