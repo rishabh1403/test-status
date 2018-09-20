@@ -11,109 +11,22 @@ draft: true
 In this one we will discuss the solution of Between two sets in Golang. It wraps good amount of logic, will be fun solving it. Let's dive right into it.
 <!--more-->
 # Problem Statement
-The question can be found at this [link](https://www.hackerrank.com/challenges/apple-and-orange/problem). The problem statement states that we are given two trees, an apple and an orange tree, and fruits are falling from those trees. We need to find out if those fruits are falling in a given line segment or not.
+The question can be found at this [link](https://www.hackerrank.com/challenges/between-two-sets/problem). The problem statement states that we need to find the number of all the integers which satisfy two given conditions.
+
+* The integers of first given array are all factors of the selected integer i.e. all the numbers in the first array should divide the given integer perfectly.
+* The integer being chosen divides all the numbers of second array perfectly.
 
 # Challenges
 
 * Choose our preferred language as [golang](https://golang.org/) on hackerrank. The moment we do that, we get some 50-60 lines of code which are very unfamiliar to someone who is new to language.
-* Cracking the logic required to solve the question.
+* Working with factors.
+* Cracking the range of numbers in which our integers exist.
 
 # Solution
 
 This is the template you get on [hackerrank](https://www.hackerrank.com/) for this problem statement.
 
 ```go
-    package main
-
-    import (
-        "bufio"
-        "fmt"
-        "io"
-        "os"
-        "strconv"
-        "strings"
-    )
-
-    // Complete the countApplesAndOranges function below.
-    func countApplesAndOranges(s int32, t int32, a int32, b int32, apples []int32, oranges []int32) {
-
-
-    }
-
-    func main() {
-        reader := bufio.NewReaderSize(os.Stdin, 1024 * 1024)
-
-        st := strings.Split(readLine(reader), " ")
-
-        sTemp, err := strconv.ParseInt(st[0], 10, 64)
-        checkError(err)
-        s := int32(sTemp)
-
-        tTemp, err := strconv.ParseInt(st[1], 10, 64)
-        checkError(err)
-        t := int32(tTemp)
-
-        ab := strings.Split(readLine(reader), " ")
-
-        aTemp, err := strconv.ParseInt(ab[0], 10, 64)
-        checkError(err)
-        a := int32(aTemp)
-
-        bTemp, err := strconv.ParseInt(ab[1], 10, 64)
-        checkError(err)
-        b := int32(bTemp)
-
-        mn := strings.Split(readLine(reader), " ")
-
-        mTemp, err := strconv.ParseInt(mn[0], 10, 64)
-        checkError(err)
-        m := int32(mTemp)
-
-        nTemp, err := strconv.ParseInt(mn[1], 10, 64)
-        checkError(err)
-        n := int32(nTemp)
-
-        applesTemp := strings.Split(readLine(reader), " ")
-
-        var apples []int32
-
-        for i := 0; i < int(m); i++ {
-            applesItemTemp, err := strconv.ParseInt(applesTemp[i], 10, 64)
-            checkError(err)
-            applesItem := int32(applesItemTemp)
-            apples = append(apples, applesItem)
-        }
-
-        orangesTemp := strings.Split(readLine(reader), " ")
-
-        var oranges []int32
-
-        for i := 0; i < int(n); i++ {
-            orangesItemTemp, err := strconv.ParseInt(orangesTemp[i], 10, 64)
-            checkError(err)
-            orangesItem := int32(orangesItemTemp)
-            oranges = append(oranges, orangesItem)
-        }
-
-        countApplesAndOranges(s, t, a, b, apples, oranges)
-    }
-
-    func readLine(reader *bufio.Reader) string {
-        str, _, err := reader.ReadLine()
-        if err == io.EOF {
-            return ""
-        }
-
-        return strings.TrimRight(string(str), "\r\n")
-    }
-
-    func checkError(err error) {
-        if err != nil {
-            panic(err)
-        }
-    }
-
-
 ```
 * First go ahead and delete everything in the pre-existing template.
 * Let's write down our main wrapper function.
@@ -126,40 +39,62 @@ func main(){
 
 }
 ```
-Let's figure out the variables we need for this problem. We need to store the co-ordinates of line segment `s,t`, we need co-ordinates of the apple tree `a` and the co-ordinates of the orange tree `b`. We need the number of apples falling `m`, the number of oranges falling `n`. Now do we need to store the entire array or can we just have a temporary variable, store input one by one, decide if it falls under the line segment and be done with it? we will go with second approach. So we need a temporary variable `temp`. Next we need two counter variables to store the number of times an apple or orange falls in the given segment, so two more variables, `ac and oc`. Phew!!! let's declare them and take the required inputs.
+
+First of all as always we will discuss on how many variables we need. We need the length of first array `n`, length of second array `m`, and a counter variable to store the result `c`. Now we need to make a decision whether we need to take whole array as input or we can just take array elements as input in temporay variable, use it and let go of it. In this case we need to do some operation of our array elements after all the elements have been taken as input, so we need to take the whole array as input, for both the arrays. So let's go ahead, declare our variables, take our inputs, create arrays and we will discuss the logic after that.
 
 ```go
 
     ...
-    var s,t,a,b,m,n,temp,ac,oc int
-    fmt.Scan(&s,&t)
-    fmt.Scan(&a,&b)
-    fmt.Scan(&m,&n)
+    var n,m,c int
+    fmt.Scan(&n,&m)
+    
+    a := make([]int,n)
+    b := make([]int,m)
+    
+    for i :=0;i<n;i++{
+        fmt.Scan(&a[i])
+    }
+    for i:=0;i<m;i++{
+        fmt.Scan(&b[i])
+    }
 
 ```
 
-Okay, now we have our variables, next we will take the distance that a fruit travels after falling as input one by one and calculate if it lies inside the line segment. Now if the co-ordinate of the tree when added to the distance lies inside the segment we will increase the counter else no increase, and same logic for orange tree as well. It doesn't matter if the distance is negative or positive, the summation will always provide desired result. So here goes the code.
+So, we declared our variables, took the length of arrays as inputs, declared arrays and took array elements as input. Now comes the logic. Let's first think in what range can a number lie which will satisfy both the required conditions. If a number is divisible by all numbers of an array (***first condition***) it has to be larger than or equal to all the numbers in the array. Now the array size is `1 <= a[i] <= 100`, so taking the worst case where all numbers in the array are `1`, our search parameter can be any number ***greater than or equal to 1*** . That is infinite possibilities. But we got a lower bound, ***Number should be greater than or equal to 1***, next second condition says the number should be a factor or all the numbers in second array, for that to happpen ***the number chosen should be less than or equal to all the numbers of array***, taking the worst case again, if all the numbers of the array are `100` i.e. the largest number, our chosen number should be ***less than or equal to 100***. So now we have our lower bound as well as the uppper bound for our number. So our answers lie in the range from ***1 to 100***. Now we need to loop over the numbers, check if they satisfy both the conditions and increase the counter. Let's look at the code and then we will discuss the minute details about the code implementation
 
 ```go
 
 	...
-    for i:= 0;i<m;i++{
-        fmt.Scan(&temp)
-        if a+temp >= s && a+temp <= t {
-            ac++
+    for i:=1;i<=100;i++{
+        factor := true
+        
+        //check first
+        for j:=0;j<n;j++{
+            if i % a[j] != 0 {
+                factor = false
+                break
+            }
         }
-    }
-    for i:= 0;i<n;i++{
-        fmt.Scan(&temp)
-        if b+temp >= s && b+temp <= t {
-            oc++
+        // check second
+        if factor {
+            for j :=0;j<m;j++{
+                if b[j]%i !=0 {
+                    factor = false
+                    break
+                }
+            }
         }
+        //update counter
+        if factor{
+            c++
+        }
+        
     }
-    fmt.Printf("%d\n%d",ac,oc)
+    fmt.Println(c)
 
 ```
 
-So we have two loops here, completely similar, we'll just discuss one. We are looping the number of fruits time, taking an input in the temporary variable, now if the co-ordinate of apple or orange tree plus the distance the fruit travels is greater than equal to `s` and less than equal to `t` we say that the fruit fell inn the segment and increase the occurence of that event. After the loops we just print the out, since we are required to print the output in two lines, we use formatted printing, `%d` for integer, `\n` for new line. Now the complete code should look like
+Here we are looping over our decided range and assuming the number satisfies both the condition. `factor := 0` holds the flag for that logic. Now we will loop over our first array and check for our condition i.e. all number of the array should perfectly divide the number. If at any point the condition is not met we flip the `factor` to false and break out of the loop, as there is no point checking any further. Now we only check for our condition in second loop if the ***factor is still true*** , otherwise there is really no point checking. If the factor is true, we applu the same logic here. Now after all these checks if factor is still true, we have found a match, and we increment our counter. At the end of our for loop we just print out the result. So now your complete code should look like
 
 ```go
 
@@ -168,31 +103,50 @@ package main
 import "fmt"
 
 func main(){
-    var s,t,a,b,m,n,temp,ac,oc int
-    fmt.Scan(&s,&t)
-    fmt.Scan(&a,&b)
-    fmt.Scan(&m,&n)
+    var n,m,c int
+    fmt.Scan(&n,&m)
     
-    for i:= 0;i<m;i++{
-        fmt.Scan(&temp)
-        if a+temp >= s && a+temp <= t {
-            ac++
-        }
+    a := make([]int,n)
+    b := make([]int,m)
+    
+    for i :=0;i<n;i++{
+        fmt.Scan(&a[i])
     }
-    for i:= 0;i<n;i++{
-        fmt.Scan(&temp)
-        if b+temp >= s && b+temp <= t {
-            oc++
-        }
+    for i:=0;i<m;i++{
+        fmt.Scan(&b[i])
     }
-    fmt.Printf("%d\n%d",ac,oc)
+    
+    for i:=1;i<=100;i++{
+        factor := true
+        
+        //check first
+        for j:=0;j<n;j++{
+            if i % a[j] != 0 {
+                factor = false
+                break
+            }
+        }
+        // check second
+        if factor {
+            for j :=0;j<m;j++{
+                if b[j]%i !=0 {
+                    factor = false
+                    break
+                }
+            }
+        }
+        //update counter
+        if factor{
+            c++
+        }
+        
+    }
+    fmt.Println(c)
 }
 
 ```
 
-Let's review what are the highlights to take away from this question. We take a bunch of variables as input and then discussed the logic. Next we take the distance each fruit travels as input one by one and add it to tree co-ordinate to check if it falls in the line segment, and finally print our result in the desired format. This is it for this one, complete source code for this post can be found on my [Github Repo](https://github.com/rishabh1403/hackerrank-golang-solutions/blob/master/practice/algorithms/implementation/apple-and-orange.go). Will see you in the next one.
-
-This is it for this one, complete source code for this post can be found on my [Github Repo](//TODO ADD repo). Will see you in the next one.
+Phew!!! it was a good one. We discussed how to narrow down our search space, used a flag and break to limit the computations, and came out with a working solution. This is it for this one, complete source code for this post can be found on my [Github Repo](https://github.com/rishabh1403/hackerrank-golang-solutions/blob/master/practice/algorithms/implementation/apple-and-orange.go). Will see you in the next one.
 
 There you go guys, you made it to end of the post. Please check out the video below if you still have any doubts. Subscribe to my [youtube channel](https://www.youtube.com/channel/UC4syrEYE9_fzeVBajZIyHlA) and my mailing list below for regular updates. Follow me on [twitter](https://www.twitter.com/rishabhjain1403) , drop me a mail or leave a comment here if you still have any doubts and I will try my best to help you out. Thanks
 
