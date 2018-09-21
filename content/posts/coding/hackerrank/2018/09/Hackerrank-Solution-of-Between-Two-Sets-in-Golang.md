@@ -5,7 +5,7 @@ author: "Rishabh Jain"
 keywords: ["rishabh","jain","rishabh jain","rishabh1403","go","golang","hackerrank solutions","solutions in golang","between two sets hackerrank","blog","competitive","coding","programming","tech","technology"]
 tags: ["coding","golang","hackerrank"]
 categories: ["coding","golang","hackerrank"]
-date: 2018-09-21T18:45:04+05:30
+date: 2018-09-21T18:39:04+05:30
 draft: false
 ---
 In this one we will discuss the solution of Between two sets in Golang. It wraps good amount of logic, will be fun solving it. Let's dive right into it.
