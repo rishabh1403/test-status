@@ -1,6 +1,6 @@
 ---
 title: "Hackerrank | Solution of Divisible Sum Pairs in Golang"
-description: "Hackerrank Solution of Divisible Sum Pairs in Golang"
+description: "In this one we will solve question divisible sum pairs from hackerrank in golang. Let's get right into it."
 author: "Rishabh Jain"
 keywords: ["rishabh","jain","rishabh jain","rishabh1403","blog","competitive","coding","programming","tech","technology","go","golang","hackerrank","hackerrank solutions","solutions in golang","divisible sum pairs"]
 tags: ["hackerrank","coding","golang"]
@@ -8,6 +8,9 @@ categories: ["hackerrank","coding","golang"]
 date: 2018-10-03T14:42:10+05:30
 draft: true
 ---
+In this one we will solve question divisible sum pairs from hackerrank in golang. Let's get right into it.
+<!--more-->
+
 # Problem Statement
 The question can be found at this [link](https://www.hackerrank.com/challenges/divisible-sum-pairs/problem). The problem statement states that we need to find all those pairs of numbers where sum of those numbers are divisible by a given number `k`. 
 
