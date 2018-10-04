@@ -12,7 +12,7 @@ In this one we will solve question migratory birds from hackerrank in golang. Th
 <!--more-->
 
 # Problem Statement
-The question can be found at this [link](https://www.hackerrank.com/challenges/migratory-birds/problem). The problem statement states that there are many birds of ***very few*** types and we need to find which type of bird is most in number. In case we have two types with same number we need to answer the bird with lower number. 
+The question can be found at this [link](https://www.hackerrank.com/challenges/migratory-birds/problem). The problem statement states that there are many birds of ***very few*** types and we need to find which type of bird is most in number. In case we have multiple types with same number we need to answer the bird with lower type. 
 
 # Challenges
 
@@ -127,12 +127,12 @@ So, let's look into the variables. According to the input format we are given th
 
 ```
 
-We are declaring the variables as discussed, creating an array, taking input for the array. Then we decrease the type by one to adjust for zero based indexing and increase the count for that index. Now we have count for all types of birds. Next we need our logic. So we need to display the type of bird whose ***occurrence*** was maximum, in case where two types of birds had same occurrence, display the one with lower number as type. To implement this, we will assume that the bird with maximum occurrence is of type `1`, and then loop over the array from the beginning. If the number at any particular index is more than the number at our occurrence index, we will update our occurence index as well the max number and continue our search. In this way we will find the index with max number, and avoid the case of same maximum. At the end we will print the occurrence after adding `1` to it ( the adjustment for zero based indexing ). Let's convert that into code.
+We are declaring the variables as discussed, creating an array, taking input for the array. Then we decrease the type by one to adjust for zero based indexing and increase the count for that index. Now we have count for all types of birds. Next we need our logic. So we need to display the type of bird whose ***occurrence*** was maximum, in case where multiple types of birds had same occurrence, display the one with lower number as type. To implement this, we will assume that the bird with maximum occurrence is of type `1`, and then loop over the array from the beginning. If the number at any particular index is more than the number at our occurrence index, we will update our occurence index as well the max number and continue our search. In this way we will find the index with max number, and avoid the case of same maximum. At the end we will print the occurrence after adding `1` to it ( the adjustment for zero based indexing ). Let's convert that into code.
 
 ```go
 
 	...
-    max,occ := 0,0
+    max,occ := a[0],0
     
     for i,num := range a{
         if num > max{
@@ -164,7 +164,7 @@ func main(){
         t = t -1
         a[t]++
     }
-    max,occ := 0,0
+    max,occ := a[0],0
     
     for i,num := range a{
         if num > max{
