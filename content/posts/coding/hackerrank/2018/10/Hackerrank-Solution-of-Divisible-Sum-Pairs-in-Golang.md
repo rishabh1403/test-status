@@ -107,7 +107,7 @@ func main(){
 
 }
 ```
-Let's discuss the vaariables that we need for our question. We need the length of array `n`, the number `k`, the counter the store the result `c`,  and the array itself. Since we need to find pairs of numbers, instead of taking inputs in temporary variables we would need it in a array so that we can loop over it and form a pair. Let's declare our variables, our array, takes inputs and come back again to discuss the logic.
+Let's discuss the variables that we would need for our question. We need the length of array `n`, the number `k`, the counter the store the result `c`,  and the array itself. Since we need to find pairs of numbers, instead of taking inputs in temporary variables we would need it in a array so that we can loop over it and form a pair. Let's declare our variables, our array, takes inputs and come back again to discuss the logic.
 
 ```go
 
@@ -123,7 +123,7 @@ Let's discuss the vaariables that we need for our question. We need the length o
    
 ```
 
-Nothing fancy here, declaring the variables as discussed, declaring the array and taking it's elements as inputs. Let's discuss the logic now. So we need to form pairs in a way where the `a[i]+a[j] % k = 0 and i<j ` , so it's pretty simple we will have a outer loop which will loop over the array from `0` to length of array while the inner loop will loop over the array from `i+1` i.e. the condition that `j>i` to length of array. Now we can form pairs of numbers from `(i,j) index` and check for divisibility by `k`. If it is divisible, we will increase the counter, else we will move one in the next loop. If that sounds clear, let's implement it now.
+Nothing fancy here, declaring the variables as discussed, declaring the array and taking it's elements as inputs. Let's discuss the logic now. So we need to form pairs in a way where the `a[i]+a[j] % k = 0 and i<j ` , so it's pretty simple we will have an outer loop which will loop over the array from `0` to length of array while the inner loop will loop over the array from `i+1` i.e. the condition that `j>i` to length of array. Now we can form pairs of numbers from `(i,j) index` and check for divisibility by `k`. If it is divisible, we will increase the counter, else we will move one in the next loop. If that sounds clear, let's implement it now.
 
 ```go
 
