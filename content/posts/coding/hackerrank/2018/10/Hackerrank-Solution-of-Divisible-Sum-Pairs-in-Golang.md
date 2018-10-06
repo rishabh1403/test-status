@@ -5,8 +5,8 @@ author: "Rishabh Jain"
 keywords: ["rishabh","jain","rishabh jain","rishabh1403","blog","competitive","coding","programming","tech","technology","go","golang","hackerrank","hackerrank solutions","solutions in golang","divisible sum pairs"]
 tags: ["hackerrank","coding","golang"]
 categories: ["hackerrank","coding","golang"]
-date: 2018-10-03T14:42:10+05:30
-draft: true
+date: 2018-10-06T22:10:10+05:30
+draft: false
 ---
 In this one we will solve question divisible sum pairs from hackerrank in golang. Let's get right into it.
 <!--more-->
@@ -169,10 +169,9 @@ func main(){
 
 ```
 
-This was a quick and easy one. This is it for this one, complete source code for this post can be found on my [Github Repo](//TODO ADD repo). Will see you in the next one.
+This was a quick and easy one. This is it for this one, complete source code for this post can be found on my [Github Repo](https://github.com/rishabh1403/hackerrank-golang-solutions). Will see you in the next one.
 
 There you go guys, you made it to end of the post. Please check out the video below if you still have any doubts. Subscribe to my [youtube channel](https://www.youtube.com/channel/UC4syrEYE9_fzeVBajZIyHlA) and my mailing list below for regular updates. Follow me on [twitter](https://www.twitter.com/rishabhjain1403) , drop me a mail or leave a comment here if you still have any doubts and I will try my best to help you out. Thanks
 
 Stay tuned and see you around :)
-<!--
-{{< youtube I8_pURh3l_s >}}  -->
+{{< youtube UgTCStBlcj4 >}}  
