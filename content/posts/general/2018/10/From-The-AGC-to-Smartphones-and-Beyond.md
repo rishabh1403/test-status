@@ -3,7 +3,7 @@ title: "From The AGC to Smartphones and Beyond"
 description: "Today, space technology has evolved to an extent that mankind can envisage a future where space tourism could be a thing. In contrast, not even five decades ago, a single space expedition was a near to impossible task. The journey has been a historic one, much of which has been made possible by the power of modern computers, the foundation for which was laid in the 1960's."
 author: "Rishabh Jain"
 keywords: ["rishabh","jain","rishabh jain","rishabh1403","blog","competitive","coding","programming","tech","technology","agc","smartphone","moon","apollo mission"]
-tags: ["genral","space"]
+tags: ["general","space"]
 categories: ["general"]
 date: 2018-10-06T10:56:20+05:30
 draft: false
